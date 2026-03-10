@@ -326,7 +326,7 @@ namespace Raytracer
 
             // Fog
             Hittable boundary = Quad.Box(new Vec3(-20, -10, 0), new Vec3(20, 10, 40), ground);
-            world.Add(new ConstantMedium(boundary, 0.01, new Vec3(1, 1, 1)));
+            world.Add(new ConstantMedium(boundary, 0.03, new Vec3(1, 1, 1)));
 
             // Figure
             HittableList figure = new HittableList();
